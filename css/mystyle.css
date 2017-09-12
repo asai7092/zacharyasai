@@ -1,0 +1,70 @@
+body {
+	background-image:url("../img/background.jpg");
+	}
+
+#banner {
+	float:right;
+	padding-top:20px;
+	}
+
+
+
+#me {
+	width:160px;
+	float:right;
+	margin:20px;
+	}
+	
+#header {
+	background: white; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,255,255,1),rgba(248,248,248,1)); /*Safari 5.1-6*/
+  	background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,255,255,1),rgba(248,248,248,1)); /*Opera 11.1-12*/
+  	background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,255,255,1),rgba(248,248,248,1)); /*Fx 3.6-15*/
+  	background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,1),rgba(248,248,248,1)); /*Standard*/
+	text-align:right;
+	padding:20px;
+	}
+	
+.container-fluid#banner_bg {
+	padding-left:0px;
+	padding-right:20px;
+	}
+	
+.navbar-default {
+	border-radius:0px;
+	}
+	
+.navbar-default li.dropdown {
+	background: #f8f8f8; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left,rgba(240,240,240,1),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0)); /*Safari 5.1-6*/
+  	background: -o-linear-gradient(right,rgba(240,240,240,1),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0)); /*Opera 11.1-12*/
+  	background: -moz-linear-gradient(right,rgba(240,240,240,1),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0)); /*Fx 3.6-15*/
+  	background: linear-gradient(to right, rgba(240,240,240,1), rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0)); /*Standard*/
+  	}
+  	
+div#intro {
+	background:#f8f8f8;
+	padding:20px;
+	}
+
+intro {
+	background:blue;
+	}
+
+.image {
+	width:80%;
+	}
+	
+.image-logo {
+	width:50%;
+	}
+
+
+@media screen and (max-width: 992px) {
+    #banner {
+        padding-bottom:20px;
+    }
+    .navbar-nav .open .dropdown-menu{
+    background:white;
+    }
+}
