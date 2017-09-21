@@ -1,0 +1,254 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="js/frontPageSlider.js"></script>
+   <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>
+      OutfitTrader - Buy/Sell/Trade Clothing
+    </title>
+
+    <script>
+  //   $(document).ready(function(){
+  //   $('#myCarousel').carousel({
+  //         interval: 4000, 
+  //         cycle: true
+  //       });
+  // });
+    </script>
+  </head>
+  <body>
+  <div id="wrapper">
+
+  <div id="logo">
+          <img src="wide_logo.png" width="300px">
+             <ul class="nav navbar-nav">
+              <li active><a href="index.html">HOME</a></li>
+              <li><a href="browse.html">BROWSE ITEMS</a></li>
+              <li><a href="post.html">POST</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+            </ul>
+    
+      <form class="search">
+        <img src="img/mail.png" width="20px"> userName <br>
+        <input type="text" id="searchbar" col="50" />
+          <button type="submit" class="btn" style="background:#808080; height:28px; margin-left:-7px; margin-top:-4px; border-radius:0px 5px 5px 0px;" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
+        </form>
+    <img src="orangeLine.png" width="90%" style="bottom:0">
+  </div>
+    
+  <!-- Logout Button that redirect to the main page (index.php) -->
+
+
+  <!---Content-->
+<div id="content" style="padding-top:80px;">
+
+<div id="welcome">
+       <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/welcome.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/mens.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/women.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/kids.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+             <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/shoes.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+
+
+</div>  
+
+    <div class="row">
+      
+          <h2>NEWLY ADDED ITEMS</h2><br>
+           
+           <!-- Start of Slider -->
+              <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden; margin: auto;">
+
+                      <!-- Loading Screen -->
+                      <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                          <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                              background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                          </div>
+                          <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                              top: 0px; left: 0px;width: 100%;height:100%;">
+                          </div>
+                      </div>
+
+                      <!-- Slides Container -->
+                      <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 809px; height: 150px; overflow: hidden;">
+                          <div><img u="image" src="img/slider/1.jpg" /></div>
+                          <div><img u="image" src="img/slider/2.jpg" /></div>
+                          <div><img u="image" src="img/slider/3.jpg" /></div>
+                          <div><img u="image" src="img/slider/4.jpg" /></div>
+                          <div><img u="image" src="img/slider/8.jpg" /></div>
+                          <div><img u="image" src="img/slider/5.jpg" /></div>
+                          <div><img u="image" src="img/slider/7.jpg" /></div>
+                          <div><img u="image" src="img/slider/6.jpg" /></div>
+                          <div><img u="image" src="img/slider/9.jpg" /></div>
+                      </div>
+                      
+                      <!-- Bullet Navigator Skin Begin -->
+                    
+                      <!-- bullet navigator container -->
+                      <div u="navigator" class="jssorb03" style="position: absolute; bottom: 4px; right: 6px;">
+                          <!-- bullet navigator item prototype -->
+                          <div u="prototype" style="position: absolute; width: 21px; height: 21px; text-align:center; line-height:21px; color:white; font-size:12px;"><div u="numbertemplate"></div></div>
+                      </div>
+                      <!-- Bullet Navigator Skin End -->
+                      
+                      <!-- Arrow Navigator Skin Begin -->
+                     
+                      <!-- Arrow Left -->
+                      <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+                      </span>
+                      <!-- Arrow Right -->
+                      <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+                      </span>
+                      <!-- Arrow Navigator Skin End -->
+                      <a style="display: none" href="http://www.jssor.com">jQuery Slider</a>
+                  </div>
+    <!-- Jssor Slider End -->
+            <img src="img/shelf.png" width="80%" >
+            <br><br><br><br>
+             <!-- Start of Slider -->
+              <div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden; margin: auto;">
+
+                      <!-- Loading Screen -->
+                      <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                          <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                              background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                          </div>
+                          <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                              top: 0px; left: 0px;width: 100%;height:100%;">
+                          </div>
+                      </div>
+
+                      <!-- Slides Container -->
+                      <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 809px; height: 150px; overflow: hidden;">
+                          <div><img u="image" src="img/slider/10.jpg" /></div>
+                          <div><img u="image" src="img/slider/11.jpg" /></div>
+                          <div><img u="image" src="img/slider/12.jpg" /></div>
+                          <div><img u="image" src="img/slider/13.jpg" /></div>
+                          <div><img u="image" src="img/slider/14.jpg" /></div>
+                          <div><img u="image" src="img/slider/15.jpg" /></div>
+                          <div><img u="image" src="img/slider/16.jpg" /></div>
+                          <div><img u="image" src="img/slider/17.jpg" /></div>
+                          <div><img u="image" src="img/slider/18.jpg" /></div>
+                      </div>
+                      
+                      <!-- Bullet Navigator Skin Begin -->
+                    
+                      <!-- bullet navigator container -->
+                      <div u="navigator" class="jssorb03" style="position: absolute; bottom: 4px; right: 6px;">
+                          <!-- bullet navigator item prototype -->
+                          <div u="prototype" style="position: absolute; width: 21px; height: 21px; text-align:center; line-height:21px; color:white; font-size:12px;"><div u="numbertemplate"></div></div>
+                      </div>
+                      <!-- Bullet Navigator Skin End -->
+                      
+                      <!-- Arrow Navigator Skin Begin -->
+                     
+                      <!-- Arrow Left -->
+                      <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+                      </span>
+                      <!-- Arrow Right -->
+                      <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+                      </span>
+                      <!-- Arrow Navigator Skin End -->
+                      <a style="display: none" href="http://www.jssor.com">jQuery Slider</a>
+                  </div>
+    <!-- Jssor Slider End -->
+            <img src="img/shelf.png" width="80%" >
+            <br />
+          <br><br>
+        <div id="footer">
+          <img src="orangeLine.png" width="90%">
+          <br>
+          MEN | WOMEN | BOYS | GIRLS | INFANTS | FACEBOOK | TWITTER | HELP
+         <!--  <div id="footerBrowse">
+            <h4><b>BROWSE ITEMS</b></h4>
+            MEN<br>
+            WOMEN<br>
+            BOYS<br>
+            GIRLS<br>
+            INFANTS<br>
+          </div>
+          <div id="footerConnect">
+            <h4><b>CONNECT ON</b></h4>
+            FACEBOOK<br>
+            TWITTER
+          </div>
+          <div id="footerHelp">
+            <h4><b>CONTACT US</b></h4>
+            HELP
+          </div> -->
+        </div>
+    </div>
+</div>
+</div>
+
+  </body>
+</html>
