@@ -1,6 +1,60 @@
-body {
-	background-image:url("../img/background.jpg");
+body.home {
+    background-image:url("../img/bg.png");
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:auto 100vh;
+	font-family:Verdana;
+	font-size:18px;
 	}
+
+
+#landing {
+	position:absolute:
+	width:auto;
+	height:100vh;
+	/*background:rgba(40,40,40,0.6);*/
+	}
+	
+#landing_img {
+	max-width:auto;
+	height:100vh;
+	overflow:hidden;
+	display:block;
+	position:absolute;
+	}
+	
+#landing_text {
+	width:100%;
+	height:100%;
+	position:absolute;
+	color:white;
+	background:rgba(40,40,40,0.6);
+	}
+
+#landing_intro_text {
+	position:relative;
+	text-align:center;
+	Margin-top:35vh;
+	font-size:20px;
+	color:white;
+	opacity:1;
+	}
+	
+#landing_scroll {
+	position:relative;
+	margin-top:30vh;
+	}	
+
+#landing_scroll_text {
+	background-color:rgba(60,60,60,0.9);
+	border-radius:40px; 
+	padding:20px;
+	}
+
+a.scroll_link 	{
+	color:white;
+	}
+
 
 #banner {
 	float:right;
@@ -29,7 +83,7 @@ body {
 	}
 
 .navbar-brand {
-	padding: 0px 10px 0px 10px;
+	padding: 0px 0px 0px 0px;
 	}
 	
 .container-fluid#banner_bg {
@@ -39,7 +93,19 @@ body {
 	
 .navbar-default {
 	border-radius:0px;
+	position:absolute;
+	background:#e7e7e7;
+	width:100%;
+	z-index:2;
 	}
+	
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+    margin-bottom:20px;
+}
 	
 .navbar-default li.dropdown {
 	background: white; /* For browsers that do not support gradients */
@@ -49,38 +115,172 @@ body {
   	background: linear-gradient(to right, rgba(240,240,240,1), rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0)); /*Standard*/
   	}
   	
+
+  	
+.navbar-default .navbar-nav>li>a {
+	padding:14px 10px 5px 10px;
+	font-size:20px;
+	}
+  	
 div#intro {
-	background:#f8f8f8;
-	padding:20px;
+	background:white;
+	margin-bottom:20px;
 	}
 
 intro {
 	background:blue;
+	top:50px;
+
 	}
 
 .image {
 	width:80%;
+	display:block;
+	
 	}
 	
 .image-logo {
-	width:50%;
+	width:70%;
+	margin:10px;
 	}
 
 .title {
 	font-size:25px;
 	}
+
+#title{
+	font-size:55px;
+	font-weight:bold;
+	margin:10px;
+	}
 	
-.descript {
-	font-size:42px;
+#descript {
+	font-size:22px;
+	color: gray;
 	}
 
 .grid-img {
 	width:100%;
 	}
+	
+#thumb{
+	padding:10px;
+	}
+
+#thumbnail {
+	width:100%;
+	display:block;
+	margin:auto;
+	}
+	
+#thumb_desc {
+	display:block;
+	text-align:center;
+	color:red;
+	}
+	
+#hover_tile {
+	position:absolute;
+	margin:auto;
+	width:100%;
+	top:0px;
+	background:#222222;
+	height:100%;
+	opacity:0;
+	}
+	
+#hover_text {
+	position:absolute;
+	text-align:center;
+	margin:auto;
+	width:100%;
+	top:25%;
+	opacity:0;
+	color:white;
+	font-size:200%;
+	font-family:Verdana;
+	font-weight:bold;
+	}	
+
+
+#img_container {
+	width:100%;
+	margin:auto;
+	position:relative;
+	border:1px solid #e7e7e7;
+	}
+	
+#img_container:hover #hover_tile {
+  opacity: 0.7;
+}
+
+#img_container:hover #hover_text {
+  opacity: 1;
+}
+	
+#sketch {
+	width:60%;
+	margin-bottom:40px;
+	}
+
+#research {
+	width:40%;
+	margin-bottom:30px;
+	}
+
+#idea {
+	padding: 40px 0px 0px 0px;
+	font-size:60px;
+	font-weight:bold;
+	}
+
+#begins {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom:-30px;
+	margin-top:-20px;
+	color:#577ca8;
+	}
+	
+#forms {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom:-30px;
+	color:#577ca8;
+	}
+	
+#draws {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom:-30px;
+	color:#577ca8;
+	}	
+
+
+	
+#wordlist {
+	margin-bottom:30px;
+	}
+	
+.grid-img {
+	margin-bottom:20px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 
 @media screen and (max-width: 992px) {
+    body.home{
+    	background-size: auto 100vh;
+    	}
+    
     #banner {
-        padding-bottom:20px;
+        padding-bottom:0px;
     }
     .navbar-nav .open .dropdown-menu{
     background:white;
@@ -99,15 +299,13 @@ intro {
 	float:right;
 	}
 	
-	#me {
-	width:160px;
-	float:right;
-	margin:20px;
-	}
-	#banner {
-		background:white;
-		left:10px;
-		margin:30px;
-		}
 	
+	#landing_intro_text {
+	Margin-top:20vh;
+	
+	}
+	
+#landing_scroll {
+	margin-top:15vh;
+	}	
 }

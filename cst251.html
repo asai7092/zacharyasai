@@ -24,12 +24,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/mystyle.css" rel="stylesheet">
     
   </head>
   <body>
   
-  	<nav class="navbar navbar-default">
+  	<nav class="navbar navbar-default navbar-fixed" id="nav_bar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -46,112 +47,15 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Core <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst300.html">
-            		Major Proseminar
-            	</a>
-            </li>
-            <li>
-            	<a href="cst205.html">
-            		Multimedia Design & Programming
-            	</a>
-            </li>
-            <li>
-            	<a href="cst227.html">
-            		Design Fundamentals
-            	</a>
-            </li>
-            <li>
-            	<a href="cst221.html">
-            		Scripting for Multimedia
-            	</a>
-            </li>
-            <li>
-            	<a href="cst236.html">
-            		Computing for Digital Artists
-            	</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Emphasis <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst251.html">
-            		Web Tools
-            	</a>
-            </li>
-            <li>
-            	<a href="cst336.html">
-            		Internet Programming
-            	</a>
-            </li>
-            <li>
-            	<a href="cst351.html">
-            		Web Design
-            	</a>
-            </li>
-            <li>
-            	<a href="cst451.html">
-            		Web Production
-            	</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Breadth <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst304.html">
-            		Publication Design
-            	</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Culmination <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst373.html">
-            		Ethics in Comm. & Tech.
-            	</a>
-            </li>
-            <li>
-            	<a href="capstone.html">
-            		Capstone
-            	</a>
-            </li>
-            <li>
-            	<a href="servicelearning.html">
-            		Service Learning
-            	</a>
-            </li>
-          </ul>
-        </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="about.html">
-            		Get to Know Me
-            	</a>
-            </li>
-            <li>
-            	<a href="resume.html">
-            		R&eacute;sume
-            	</a>
-            </li>
-          </ul>
-        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/zachary-asai-b021a3146" style="padding:10px 10px 10px 10px;">Linked<i style="font-size:26px;" class="fa">&#xf08c;</i></a>
+      	</li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About Me</a>
+      	</li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -159,7 +63,6 @@
 <div class="container-fluid" id="banner_bg">
  	<div class="row">
   		<div class="col-md-12" id="banner">
-  			<img id="me" src="img/me.png"/>
   			<div id="header">
   				<span class="title">
   					CST251

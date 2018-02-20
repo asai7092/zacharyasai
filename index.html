@@ -24,12 +24,85 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/mystyle.css" rel="stylesheet">
     
-  </head>
-  <body>
+    <script>
+    // Navbar snap to top of window //
+    	$(document).ready(function() {
   
-  	<nav class="navbar navbar-default">
+  			$(window).scroll(function () {
+				//if you hard code, then use console
+     			 //.log to determine when you want the 
+     			 //nav bar to stick.  
+      			console.log($(window).scrollTop())
+    				if ($(window).scrollTop() > $(window).height()) {
+      					$('#nav_bar').addClass('navbar-fixed');
+    				}
+    				if ($(window).scrollTop() < $(window).height()) {
+      					$('#nav_bar').removeClass('navbar-fixed');
+    				}
+  				});
+		});
+		
+		$(document).ready(function() {
+  
+  			$(window).scroll(function () {
+				//if you hard code, then use console
+     			 //.log to determine when you want the 
+     			 //nav bar to stick.  
+      			console.log($(window).scrollTop())
+    				if ($(window).scrollTop() > $(window).height()) {
+      					$('#nav_holder').removeClass('navbar-fixed');
+    				}
+    				if ($(window).scrollTop() < $(window).height()) {
+      					$('#nav_holder').addClass('navbar-fixed');
+    				}
+  				});
+		});
+		
+		// Explode Thumbnail //
+		
+    </script>
+    
+  </head>
+  <body class="home">
+  <div id="land_contain">
+  	<!--<div id="landing_img"> 
+  		<img id="landing_img" src="img/bg.png"></img>
+  	</div>-->
+  
+  	<div id="landing">
+		<div id="landing_text">
+			<center>
+				<div id="landing_intro">
+					<div id="landing_intro_text">
+						<span style="font-size:53px;">
+							Graphic and Web Design Portfolio
+						</span>
+						</br>
+						by
+						</br>
+						Zachary Asai
+					</div>
+				</div>
+			</center>
+			<center>
+				<div id="landing_scroll">
+					<div style="position:relative;">
+						<a class="scroll_link" href="#content">
+							<span id="landing_scroll_text">
+								Scroll Down to View Work <span style="font-size:12px;">&#9660;</span>	
+							</span>
+						</a>
+					</div>	
+				</div>
+			</center>
+		</div>
+  	</div>
+  </div>
+  
+  <nav class="navbar navbar-default" id="nav_bar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -46,149 +119,190 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Core <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst300.html">
-            		Major Proseminar
-            	</a>
-            </li>
-            <li>
-            	<a href="cst205.html">
-            		Multimedia Design & Programming
-            	</a>
-            </li>
-            <li>
-            	<a href="cst227.html">
-            		Design Fundamentals
-            	</a>
-            </li>
-            <li>
-            	<a href="cst221.html">
-            		Scripting for Multimedia
-            	</a>
-            </li>
-            <li>
-            	<a href="cst236.html">
-            		Computing for Digital Artists
-            	</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Emphasis <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst251.html">
-            		Scripting for Multimedia
-            	</a>
-            </li>
-            <li>
-            	<a href="cst336.html">
-            		Internet Programming
-            	</a>
-            </li>
-            <li>
-            	<a href="cst351.html">
-            		Web Design
-            	</a>
-            </li>
-            <li>
-            	<a href="cst451.html">
-            		Web Production
-            	</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Breadth <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst304.html">
-            		Publication Design
-            	</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Culmination <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="cst336.html">
-            		Ethics in Comm. & Tech.
-            	</a>
-            </li>
-            <li>
-            	<a href="capstone.html">
-            		Capstone
-            	</a>
-            </li>
-            <li>
-            	<a href="servicelearning.html">
-            		Service Learning
-            	</a>
-            </li>
-          </ul>
-        </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-            	<a href="about.html">
-            		Get to Know Me
-            	</a>
-            </li>
-            <li>
-            	<a href="resume.html">
-            		R&eacute;sume
-            	</a>
-            </li>
-          </ul>
-        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/zachary-asai-b021a3146" style="padding:10px 10px 10px 10px;">Linked<i style="font-size:26px;" class="fa">&#xf08c;</i></a>
+      	</li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About Me</a>
+      	</li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid" id="banner_bg">
- 	<div class="row">
-  		<div class="col-md-12" id="banner">
-  			<img id="me" src="img/me.png"/>
-  			<div id="header">
-  				<h1>
-  					Zachary Asai's
-  					</br>
-  					Web Design
-  					</br>
-  					Portfolio&nbsp;
-  				</h1>
-  			</div>
-		</div>
-	</div>
-</div>
-<div class="container">
-	<div class="row content">
+</br>
+</br>
+
+<div class="container" id="content">
+	<div class="row content" style="margin:20px 0px 0px 0px">
 		<div class="col-md-1">
 		</div>
   		<div class="col-md-10" id="intro">
-  			<h2>Hi! My name is Zachary Asai and welcome to my student web design portfolio!</h2>
-  			</br>
-  			I am a California State University of Monterey Bay Alumni, where I Graduate end of Fall 2015, B.S. in Communication Design with an Emphasis in Web Design. 
-  			I have a real drive for Graphics design and an even greater passion in Web Design and Development, with hand-coding being my a strong 
-  			favorite of mine. Throughout my course at CSUMB, I became proficient in using Drupal 7, Adobe Suites' Illustrator, InDesign, Photoshop,
-  			Dreamweaver and languages including, HTML5, CSS3, Javascript, Jquery, PHP
   			
   		</div>
   		<div class="col-md-1">
   		</div>
 	</div>
 </div>
-    
+
+<div class="container">
+	<div class="row content">
+    	<div class="col-md-4" id="thumb">
+    		<a href="capstone.html">
+    			<div id="img_container">
+    				<img id="thumbnail" src="img/outfittrader1_thumb.png">
+    				<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+    					Outfit Trader
+    					</br>
+    					Capstone
+    					</br>
+						2015    					
+					</div>
+    			</div>
+    			
+    		</a>
+  		</div>
+  		<div class="col-md-4" id="thumb">
+  			<a href="ladiesfirst.html">
+  				<div id="img_container">
+  					<img id="thumbnail" src="img/ladiesfirst.png">
+  					<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+    					Ladies First
+    					</br>
+    					Non-Profit
+    					</br>
+						2015    					
+					</div>
+				</div>
+  			</a>
+  		</div>
+  		<div class="col-md-4" id="thumb">
+  			<a href="ppa.html">
+  				<div id="img_container">
+  					<img id="thumbnail" src="img/ppa_thumb.jpg">
+  				<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+    					PPA
+    					</br>
+    					Non-Profit
+    					</br>
+						2014    					
+					</div>
+				</div>
+  			</a>
+  		</div>
+  	</div>
+</div>
+
+<div class="container">
+	<div class="row content">
+    	<div class="col-md-4" id="thumb">
+    		<a href="cst304.html">
+    			<div id="img_container">
+    				<img id="thumbnail" src="img/sas_front.png">
+    				<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+    					Study
+    					</br>
+    					At Sea
+    					</br>
+						2014    					
+					</div>
+				</div>
+    		</a>
+  		</div>
+  		<div class="col-md-4" id="thumb" >
+  			<a href="cst351_mbsb.html">
+  				<div id="img_container">
+  					<img id="thumbnail" src="img/mbsb.png">
+  					<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+    					Monterey Bay 
+    					</br>
+    					Shutter Bugs
+    					</br>
+						2015    					
+					</div>
+				</div>
+  			</a>
+  		</div>
+  		<div class="col-md-4" id="thumb">
+  			<a href="cst351_color.html">
+  				<div id="img_container">
+  					<img id="thumbnail" src="img/color.png">
+  					<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+						Colorful 
+						</br>
+						Music
+    					</br>
+						2015    					
+					</div>
+				</div>
+  			</a>
+  		</div>
+  	</div>
+</div>
+
+<div class="container" style="padding-bottom:30px;">
+	<div class="row content">
+    	<div class="col-md-4" id="thumb">
+    		<div id="img_container">
+    			<img id="thumbnail" src="img/336.png">
+    			<div id="hover_tile">
+    			</div>
+    			<div id="hover_text">
+					Simpsons 
+					</br>
+					Database
+    				</br>
+					2014    					
+				</div>
+			</div>
+  		</div>
+  		<div class="col-md-4" id="thumb">
+  			<a href="cst221.html">
+  			<div id="img_container">
+  				<img id="thumbnail" src="img/221.png">
+  				<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+						The Cat's 
+						</br>
+						Meow
+    					</br>
+						2014    					
+					</div>
+				</div>
+  			</a>
+  		</div>
+  		<div class="col-md-4" id="thumb">
+  			<a href="cst227.html">
+  				<div id="img_container">
+  					<img id="thumbnail" src="img/twl-vector-final_thumb.png">
+  					<div id="hover_tile">
+    				</div>
+    				<div id="hover_text">
+						Together
+						</br>
+						With love
+    					</br>
+						2015    					
+					</div>
+				</div>
+  			</a>
+  		</div>
+  	</div>
+</div>
 
 </html>
